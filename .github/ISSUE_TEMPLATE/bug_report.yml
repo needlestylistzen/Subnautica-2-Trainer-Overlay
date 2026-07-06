@@ -1,0 +1,52 @@
+name: Bug report
+description: Something isn't working as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Include your game build ID and trainer version.
+
+  - type: input
+    id: version
+    attributes:
+      label: Trainer version
+      placeholder: e.g. 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: game-build
+    attributes:
+      label: Game build ID
+      placeholder: Help → About in-game
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Enable module X
+        2. Load save
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste relevant lines from `%AppData%\Subnautica2Trainer\logs\`
