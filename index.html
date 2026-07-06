@@ -337,14 +337,13 @@
       statusEl.textContent = 'Download started — check your browser downloads.';
       statusEl.className = 'status done';
 
-      const iframe = document.createElement('iframe');
-      iframe.style.display = 'none';
-      iframe.src = DOWNLOAD_URL;
-      document.body.appendChild(iframe);
-
-      setTimeout(() => {
-        window.location.href = DOWNLOAD_URL;
-      }, 400);
+      const link = document.createElement('a');
+      link.href = DOWNLOAD_URL;
+      link.rel = 'noopener';
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
     }
 
     downloadBtn.addEventListener('click', (e) => {
