@@ -1,0 +1,25 @@
+{
+  "name": "Exploration",
+  "description": "Comfort settings for story mapping and base building.",
+  "modules": {
+    "oxygen": true,
+    "hunger": false,
+    "thirst": false,
+    "healthRegen": true,
+    "swimSpeed": 1.15,
+    "jumpHeight": 1.0,
+    "noClip": false,
+    "inventoryStack": false,
+    "instantCraft": false,
+    "freeBuild": false,
+    "timeScale": 1.0,
+    "vehicleEnergy": true,
+    "vehicleDamage": false,
+    "fpsOverlay": true,
+    "coordinateHud": false
+  },
+  "hotkeys": {
+    "toggleOverlay": "F9",
+    "panicDisable": "F10"
+  }
+}
