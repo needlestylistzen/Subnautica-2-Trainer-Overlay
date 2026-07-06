@@ -1,0 +1,26 @@
+# Build artifacts
+bin/
+obj/
+*.user
+*.suo
+
+# IDE
+.vs/
+.idea/
+
+# Logs & local config
+logs/
+*.log
+appsettings.local.json
+
+# User profiles (keep examples only)
+profiles/*
+!profiles/exploration.json
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Secrets
+.env
+*.pfx
